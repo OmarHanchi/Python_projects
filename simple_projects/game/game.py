@@ -50,7 +50,7 @@ class Mage(Character):
 class Warrior(Character):
     # Constructor
     def __init__(self, name, attack_power, defend_power):
-        # Using the parent's constructor to initialize 'name' and 'attack_power'.
+        # Using the parent's constructor to initialize 'name' and 'attack_power'
         super().__init__(name, attack_power)
         # Initializing 'defend_power' and 'is_defending' which are unique to the Warrior class.
         self.defend_power = defend_power
@@ -62,7 +62,7 @@ class Warrior(Character):
             self.is_defending = True
             print(f"{self.name} is preparing to defend!")
 
-    # Instance Method: Overriding the parent 'take_damage' method to reduce the damage when the Warrior is defending!
+    # Instance Method: Overriding the parent 'take_damage' method to reduce the damage when the Warrior is defending !!
     def take_damage(self, damage):
         if self.is_defending:
             damage -= self.defend_power
